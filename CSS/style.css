@@ -1,0 +1,305 @@
+
+
+summary {
+    background-color: #d59500bb !important;
+    border-color: #d5950079 !important;
+}
+
+.main ul li {
+    list-style: disc !important;
+}
+
+ul li::marker {
+    color: #d56000b3;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #fcfcfc;
+}
+
+
+.bottom {
+    width: 350px;
+    background-color: #72bcbcf2;
+    color: #0e4545fe;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: all 5s ease;
+}
+
+.bottom:hover {
+    width: 340px;
+    left: 30px;
+    transform: all 5s ease;
+}
+
+.main {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 0 10px;
+    max-width: 1200px;
+}
+
+.main h2 {
+    color: #D56100;
+    margin-top: 10px;
+}
+
+.main figure {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main figcaption>a {
+    color: #D59400;
+}
+
+.main i {
+    color: #D56100;
+    font-size: large;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .table_wrap {
+        padding: 5px !important;
+    }
+
+    table {
+        max-width: 800px;
+    }
+
+    th, td {
+        font-size: 12px;
+    }
+
+    .main {
+        margin-left: 10px;
+        max-width: 100%;
+        ;
+    }
+
+
+    .menu {
+        left: -337px !important;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .menu {
+        left: -320px !important;
+    }
+
+    .grid {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+    .grid>div {
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+    .grid>div:last-child {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        left: -305px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .menu {
+        left: -295px !important;
+    }
+    .right_menu {
+        opacity: 0;
+    }
+}
+
+
+.table_wrap {
+    margin: 0 auto;
+
+    display: inline-block;
+    padding: 2rem 2rem;
+    color: #000;
+}
+
+.table_wrap h1 {
+    margin: 0 auto;
+}
+
+.table_wrap table {
+    margin: 0 auto;
+}
+
+
+table {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+table th {
+    color: #fff;
+    background-color: #444;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .table_wrap {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+    table {
+        border: 0;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+        border-right: 1px solid transparent;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+
+
+.menu {
+    padding: 40px;
+    position: fixed;
+    background-color: #1a80803e;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    border-right: 20px solid #21525500;
+    left: -350px;
+    transition: all 0.5s ease;
+    top: 0;
+}
+
+.menu:hover {
+    left: 0px;
+    transition: all 1s ease;
+}
+
+.sidenav li {
+    font-size: 21px;
+    margin-bottom: 0px;
+    list-style: none;
+}
+
+.sidenav a {
+    color: #0e4545;
+    padding-left: 5px;
+    transition: all 0.5 s ease;
+    text-decoration: none;
+}
+
+.sidenav a:hover {
+    padding-left: 10px;
+    transition: all 0.2s ease;
+}
+
+.right_menu {
+    top: -25px;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    margin: 10px;
+}
+
+.menu_item {
+
+    margin: 10px;
+    font-size: 45px;
+    z-index: 1000;
+}
+
+.menu_item a {
+    color: #D56100;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 0 !important;
+    background-color: #44b0b072;
+    height: 70px;
+}
+
+header h1 {
+    color: #0e4545;
+
+}
+
+header samp {
+    color: #D56100;
+    font-size: 45px;
+
+}
+
+table {
+    max-width: 80%;
+}
